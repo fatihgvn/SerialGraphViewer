@@ -1,6 +1,6 @@
 # SerialGraphViewer
  
-![alt text][screenShot.png]
+![alt ScreenShot](screenShot.png)
 
 if there is any number in the incoming line, it adds it to the chart.
 
