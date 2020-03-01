@@ -27,13 +27,13 @@ namespace SerialGraphViewer
         {
             comlist.Items.Clear();
             comlist.Items.AddRange(SerialPort.GetPortNames());
-            comlist.SelectedIndex = 0;
+            if (comlist.Items.Count > 0) comlist.SelectedIndex = 0;
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             comlist.Items.AddRange(SerialPort.GetPortNames());
-            comlist.SelectedIndex = 0;
+            if (comlist.Items.Count > 0) comlist.SelectedIndex = 0;
 
             chart1.ChartAreas[0].AxisX.ScaleView.Zoomable = true;
             chart1.ChartAreas[0].AxisY.ScaleView.Zoomable = true;
